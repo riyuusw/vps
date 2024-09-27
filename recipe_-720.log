@@ -1,0 +1,28 @@
+● qemu-guest-agent.service - QEMU Guest Agent
+     Loaded: loaded (/lib/systemd/system/qemu-guest-agent.service; static)
+     Active: active (running) since Fri 2024-09-13 07:01:45 EDT; 376ms ago
+   Main PID: 348 (qemu-ga)
+      Tasks: 2 (limit: 511)
+     Memory: 2.4M
+        CPU: 53ms
+     CGroup: /system.slice/qemu-guest-agent.service
+             └─348 /usr/sbin/qemu-ga
+
+Sep 13 07:01:45 server335980293 systemd[1]: Started QEMU Guest Agent.
+Sep 13 07:01:45 server335980293 qemu-ga[348]: info: guest-ping called
+Synchronizing state of qemu-guest-agent.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable qemu-guest-agent
+The unit files have no installation config (WantedBy=, RequiredBy=, Also=,
+Alias= settings in the [Install] section, and DefaultInstance= for template
+units). This means they are not meant to be enabled using systemctl.
+ 
+Possible reasons for having this kind of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/ or .requires/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+/root/recipe_-720.sh: 38: Syntax error: "(" unexpected (expecting "then")
